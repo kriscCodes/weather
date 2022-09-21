@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://source.unsplash.com/2100x1600/?landscape");
+}
+
+.card{
+    background-color: #000000d0;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%; /* Will always take up 100% of the screen size */
+    max-width: 420px; /* At around 420px screen size the card will  begin to shrink */
+    margin: 1em;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+button{
+    border-radius: 100%;
+    border: none;
+    margin: .5em;
+    height: 2.5em;
+    width: 15%;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input.searchBar{
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    font-family: inherit;
+    font-size: 120%;
+    color: white;
+    width: calc(100% - 80px);
+}
+
+button:hover{
+    background-color: #7c7c7c6b;
+}
+
+h1.temp{
+    margin: 0;
+}
+
+.loading {
+    visibility: hidden;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading ...";
+    color: white;
+    position: absolute ;
+    top: 0;
+}
